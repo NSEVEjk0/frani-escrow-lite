@@ -1,0 +1,25 @@
+{
+  "name": "frani-escrow-lite",
+  "version": "1.0.0",
+  "description": "Two-party goods escrow: deposit, ship, confirm, release \u2014 with refund path. Made by CRYPTFRANI.",
+  "type": "module",
+  "bin": {
+    "frani-escrow-lite": "bin/frani-escrow-lite.js"
+  },
+  "scripts": {
+    "start": "node bin/frani-escrow-lite.js daemon",
+    "new": "node bin/frani-escrow-lite.js new",
+    "list": "node bin/frani-escrow-lite.js list",
+    "about": "node bin/frani-escrow-lite.js about",
+    "help": "node bin/frani-escrow-lite.js help",
+    "test": "node test/frani-escrow-lite.test.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@unicitylabs/sphere-sdk": "0.17.3",
+    "ws": "^8.21.3"
+  }
+}
